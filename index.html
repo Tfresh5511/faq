@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FAQ.css">
+</head>
+<body>
+    <div class="container">
+        <h1>General Questions</h1>
+        <div class="btn">
+            <div>
+            <button>Do You Accept All Major Credit Cards?<img src="/plus-square-svgrepo-com (1).svg" alt="" class="icon1"></button>
+            <p class="dropdown_menu hide">No we do not</p>
+            </div>
+            <button>Do You Support Local Farmers? <img src="/plus-square-svgrepo-com (1).svg" alt="" class="icon2"></button>
+            <p class="dropdown_menu2 hide">YES we do</p>
+            <button>Do You Use Organic ingredients?
+            <img src="/plus-square-svgrepo-com (1).svg" alt="" class="icon3"></button>
+            <p class="dropdown_menu3 hide">YES we do</p>
+        </div>
+    </div>
+
+    <script>
+        "use strict"
+
+        const plusIcon = document.querySelector(".icon1");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+
+        plusIcon.addEventListener("click", () => {
+            dropDownMenu.classList.toggle("hide");
+        });
+
+        window.addEventListener("click", () => {
+            if (e.target !== plusIcon) {
+                dropDownMenu.classList.add("hide");
+            }
+        });
+
+
+
+       const plusIcon2 = document.querySelector(".icon2");
+       const dropDownMenu2 = document.querySelector(".dropdown_menu2");
+
+       plusIcon2.addEventListener("click", () => {
+        dropDownMenu2.classList.toggle("hide");
+       });
+       window.addEventListener("click", () => {
+        if (e.target !== plusIcon2) {
+            dropDownMenu2.classList.add("hide");
+        }
+       });
+       
+       const plusIcon3 = document.querySelector(".icon3");
+       const dropDownMenu3 = document.querySelector(".dropdown_menu3");
+
+       plusIcon3.addEventListener("click", () =>{
+        dropDownMenu3.classList.toggle("hide");
+       });
+       window.addEventListener("click", () => {
+        if (e.target !== plusIcon3) {
+            dropDownMenu3.classList.add("hide");
+        }
+       });
+
+
+    
+
+
+    </script>
+</body>
+</html>
